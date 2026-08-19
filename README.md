@@ -81,10 +81,27 @@ github-trend-monitor/
 │   ├── analysis/               # Star 分析与 AI 分析
 │   ├── reports/                # 周报生成、渲染与发送
 │   ├── calendar/               # 发布日历生成与维护
+│   ├── web/                    # 本地数据展示页面
 │   └── queries.py              # 搜索查询配置
 ├── Makefile                    # 环境创建与常用运行命令
 └── requirements.txt            # 依赖列表
 ```
+
+### 本地数据面板
+
+```bash
+make web
+```
+
+然后打开 <http://127.0.0.1:8000>。页面会读取 `data/` 下的 CSV，支持项目搜索、领域和语言筛选，以及按 Stars、Forks 和最新发现时间排序。
+
+页面中的“生成 AI 洞察”按钮会调用 OpenRouter，对当前项目数据提炼趋势信号、优先研究项目、风险和未来 7 天行动建议。也可以直接运行：
+
+```bash
+make insights
+```
+
+需要在 `.env` 中配置 `OPENROUTER_API_KEY`，模型默认为 `nvidia/nemotron-3-ultra-550b-a55b:free`，也可以通过 `OPENROUTER_MODEL` 覆盖。
 
 ---
 

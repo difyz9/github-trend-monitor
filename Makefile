@@ -4,8 +4,9 @@ SRC := src/github_trend_monitor
 VENV_PYTHON := $(VENV)/bin/python
 VENV_PIP := $(VENV)/bin/pip
 VENV_RUN := PYTHONPATH=$(CURDIR)/src $(VENV_PYTHON)
+PORT ?= 8000
 
-.PHONY: help venv install setup run analyze report pipeline company arxiv calendar
+.PHONY: help venv install setup run analyze report insights pipeline company arxiv calendar web
 
 help:
 	@echo "Available targets:"
@@ -15,9 +16,11 @@ help:
 	@echo "  make run       Run the GitHub trend scraper"
 	@echo "  make analyze   Update stars and analyze repository trends"
 	@echo "  make report    Generate the weekly AI report"
+	@echo "  make insights  Generate AI insights from repository data"
 	@echo "  make company   Crawl company releases"
 	@echo "  make arxiv     Crawl arXiv papers"
 	@echo "  make calendar  Generate the calendar JSON"
+	@echo "  make web       Start the local data dashboard"
 	@echo "  make pipeline  Run scraper, analysis, and report generation"
 
 $(VENV_PYTHON):
@@ -26,6 +29,7 @@ $(VENV_PYTHON):
 venv: $(VENV_PYTHON)
 
 install: venv
+	$(VENV_PYTHON) -m pip install --upgrade pip
 	$(VENV_PIP) install -r requirements.txt
 
 setup: install
@@ -39,6 +43,9 @@ analyze: install
 report: install
 	$(VENV_RUN) -m github_trend_monitor.reports.generate_weekly_report
 
+insights: install
+	$(VENV_RUN) -m github_trend_monitor.analysis.ai_analyzer
+
 company: install
 	$(VENV_RUN) -m github_trend_monitor.crawlers.company_crawler
 
@@ -47,5 +54,8 @@ arxiv: install
 
 calendar: install
 	$(VENV_RUN) -m github_trend_monitor.calendar.generate_calendar_json
+
+web: install
+	PORT=$(PORT) $(VENV_RUN) -m github_trend_monitor.web.server
 
 pipeline: run analyze report
