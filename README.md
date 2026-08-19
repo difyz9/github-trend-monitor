@@ -31,31 +31,43 @@ git clone https://github.com/difyz9/github-trend-monitor.git
 cd github-trend-monitor
 ```
 
-### 2. 安装依赖
+### 2. 创建虚拟环境并安装依赖
 
 ```bash
-pip install -r requirements.txt
+make setup
 ```
 
 ### 3. 配置环境变量
+
+项目会自动读取根目录下的 `.env` 文件，例如：
 
 ```bash
 export GITHUB_TOKEN=your_github_token
 export GLM_API_KEY=your_glm_api_key  # 可选，用于生成周报
 ```
 
+也可以将这些变量写入 `.env`，然后直接使用下面的 `make` 命令运行。
+
 ### 4. 运行爬虫
 
 ```bash
-python scraper_v2.py
+make run
 ```
 
 ### 5. 生成报告
 
 ```bash
-python analyzer.py
-python generate_weekly_report.py
+make analyze
+make report
 ```
+
+也可以运行完整流程：
+
+```bash
+make pipeline
+```
+
+运行 `make help` 可查看所有可用命令。默认虚拟环境目录为 `.venv`，可以通过 `make VENV=其他目录 setup` 修改。
 
 ---
 
@@ -63,17 +75,14 @@ python generate_weekly_report.py
 
 ```
 github-trend-monitor/
-├── .github/workflows/
-│   └── daily_scraper.yml      # GitHub Actions 工作流
 ├── data/                       # 数据存储目录
-├── scraper_v2.py               # GitHub 趋势爬虫
-├── analyzer.py                 # Star 数更新与淘汰
-├── company_crawler.py          # 大厂发布爬虫
-├── generate_calendar_json.py   # 日历 JSON 生成
-├── generate_weekly_report.py   # AI 周报生成
-├── reporter.py                 # 报告生成器
-├── weekly_reporter.py          # 周报发送
-├── queries.py                  # 搜索查询配置
+├── src/github_trend_monitor/
+│   ├── crawlers/               # GitHub、厂商和 arXiv 数据抓取
+│   ├── analysis/               # Star 分析与 AI 分析
+│   ├── reports/                # 周报生成、渲染与发送
+│   ├── calendar/               # 发布日历生成与维护
+│   └── queries.py              # 搜索查询配置
+├── Makefile                    # 环境创建与常用运行命令
 └── requirements.txt            # 依赖列表
 ```
 
@@ -83,7 +92,7 @@ github-trend-monitor/
 
 ### 搜索领域配置
 
-编辑 `queries.py` 中的 `DOMAIN_QUERIES`：
+编辑 `src/github_trend_monitor/queries.py` 中的 `DOMAIN_QUERIES`：
 
 ```python
 DOMAIN_QUERIES = {
@@ -104,7 +113,7 @@ DOMAIN_QUERIES = {
 
 ### 淘汰机制配置
 
-编辑 `analyzer.py` 中的阈值：
+编辑 `src/github_trend_monitor/analysis/analyzer.py` 中的阈值：
 
 ```python
 # 连续无增长天数阈值
@@ -157,17 +166,17 @@ STALE_THRESHOLDS = {
 
 ### 添加新的搜索领域
 
-1. 在 `queries.py` 中添加新的领域关键词
-2. 重新运行 `scraper_v2.py`
+1. 在 `src/github_trend_monitor/queries.py` 中添加新的领域关键词
+2. 重新运行 `make run`
 
 ### 添加新的大厂
 
-1. 在 `company_crawler.py` 中添加厂商配置
+1. 在 `src/github_trend_monitor/crawlers/company_crawler.py` 中添加厂商配置
 2. 更新 RSS 源
 
 ### 自定义报告格式
 
-编辑 `generate_weekly_report.py` 中的模板
+编辑 `src/github_trend_monitor/reports/generate_weekly_report.py` 中的模板
 
 ---
 
