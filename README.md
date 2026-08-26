@@ -44,6 +44,7 @@ make setup
 ```bash
 export GITHUB_TOKEN=your_github_token
 export GLM_API_KEY=your_glm_api_key  # 可选，用于生成周报
+export PORT=8071  # 可选，本地 Web 面板端口
 ```
 
 也可以将这些变量写入 `.env`，然后直接使用下面的 `make` 命令运行。
@@ -173,9 +174,10 @@ STALE_THRESHOLDS = {
 
 ### 2. 工作流说明
 
-- **每日执行**：UTC 2:00（北京时间 10:00）
+- **每日执行**：UTC 1:00（北京时间 9:00）
 - **手动触发**：支持 workflow_dispatch
 - **自动提交**：数据更新后自动 commit 并 push
+- **Markdown 报告**：每天生成 `reports/daily-trends-YYYY-MM-DD.md`
 
 ---
 

@@ -88,7 +88,7 @@ class DashboardHandler(SimpleHTTPRequestHandler):
 
 
 def main():
-    port = int(os.getenv("PORT", "8000"))
+    port = int(os.getenv("PORT", "8070"))
     server = ThreadingHTTPServer(("127.0.0.1", port), DashboardHandler)
     print(f"GitHub Trend Monitor: http://127.0.0.1:{port}")
     print("按 Ctrl+C 停止服务")

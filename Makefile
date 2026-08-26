@@ -4,7 +4,6 @@ SRC := src/github_trend_monitor
 VENV_PYTHON := $(VENV)/bin/python
 VENV_PIP := $(VENV)/bin/pip
 VENV_RUN := PYTHONPATH=$(CURDIR)/src $(VENV_PYTHON)
-PORT ?= 8000
 
 .PHONY: help venv install setup run analyze report insights pipeline company arxiv calendar web
 
@@ -56,6 +55,6 @@ calendar: install
 	$(VENV_RUN) -m github_trend_monitor.calendar.generate_calendar_json
 
 web: install
-	PORT=$(PORT) $(VENV_RUN) -m github_trend_monitor.web.server
+	$(VENV_RUN) -m github_trend_monitor.web.server
 
 pipeline: run analyze report
