@@ -26,7 +26,7 @@ jobs:
 
       - name: Fetch and analyze trends
         env:
-          GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
           PYTHONPATH=src python -m github_trend_monitor.crawlers.scraper_v2
           PYTHONPATH=src python -m github_trend_monitor.analysis.analyzer
