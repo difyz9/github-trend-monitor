@@ -6651,3 +6651,56 @@ id,name,description,url,stars,forks,language,topics,created_at,first_seen,is_act
 1403282585,andrem-eberle/vinf-3080ti,"LLM inference engine for the NVIDIA RTX 3080 Ti: runs hybrid SSM/attention Qwen3.8-27B GGUF models larger than VRAM, with MTP and DFlash 2 speculative decoding, at up to 12 tok/s.",https://github.com/andrem-eberle/vinf-3080ti,0,0,Python,,2026-10-03T14:27:36Z,2026-10-04,False,Long Context
 1402523493,angia-marova/DC-Motor-State-Space-Modeling,"DC motor state-space modeling and simulation using MATLAB ODE45, Simulink, and Simscape.",https://github.com/angia-marova/DC-Motor-State-Space-Modeling,0,0,MATLAB,,2026-10-03T01:35:52Z,2026-10-04,False,Long Context
 1402832714,lotushansstudio-maker/lotushansstudio-maker.github.io,"Lotus  Out of the noise, a signal.Quantitative finance, with an art-school eye. From state-space models to generative visuals.",https://github.com/lotushansstudio-maker/lotushansstudio-maker.github.io,0,0,HTML,,2026-10-03T07:41:00Z,2026-10-04,False,Long Context
+1404511932,w-e-ll/rag-vs-long-context,"Compare RAG and long-context answering on reviewed PDF documents. Inspect answers, citations, token usage, latency, and estimated costs. Built with FastAPI, Streamlit, PostgreSQL, and local Ollama models.",https://github.com/w-e-ll/rag-vs-long-context,0,0,Python,,2026-10-04T14:32:04Z,2026-10-05,False,Long Context
+1404201007,Pradeeptalari14/tp-kimi-long-context,,https://github.com/Pradeeptalari14/tp-kimi-long-context,0,0,Python,,2026-10-04T09:32:43Z,2026-10-05,False,Long Context
+1404909449,OwenDepTry/vietnamese-long-context-abstractive-text-summarization-system,,https://github.com/OwenDepTry/vietnamese-long-context-abstractive-text-summarization-system,1,0,Python,,2026-10-04T23:16:45Z,2026-10-05,False,Long Context
+1404270275,jdymitarai/razorkv,Extreme Dynamic KV Cache Sparsification & Layer-Pyramid Eviction for Long-Context LLMs,https://github.com/jdymitarai/razorkv,0,0,Python,,2026-10-04T11:01:29Z,2026-10-05,False,Long Context
+1404023492,Lexsi-Labs/BRIEF,Code for the NeurIPS Workshop paper on Long Context Foundational Models (LCFM),https://github.com/Lexsi-Labs/BRIEF,0,0,,,2026-10-04T06:40:49Z,2026-10-05,False,Long Context
+1403945063,Sanmu-27/CentralKV-,Project page for CentralKV: Compressing Long-Context LLMs via Attention-Graph Centrality.,https://github.com/Sanmu-27/CentralKV-,0,0,JavaScript,,2026-10-04T05:27:21Z,2026-10-05,False,Long Context
+1404230221,ZettaQuant/cora-bench,CoRA-Bench: Benchmarking Context Selection for Long-Context Foundation Models Under Resource Constraints,https://github.com/ZettaQuant/cora-bench,0,0,Python,,2026-10-04T10:08:56Z,2026-10-05,False,Long Context
+1404546938,StubbornPixelLab/MambaIRv2,,https://github.com/StubbornPixelLab/MambaIRv2,0,0,Python,,2026-10-04T15:07:30Z,2026-10-05,False,Long Context
+1404553766,StubbornPixelLab/MambaIRv2_monochrome,,https://github.com/StubbornPixelLab/MambaIRv2_monochrome,0,0,Python,,2026-10-04T15:14:58Z,2026-10-05,False,Long Context
+1404764654,codebyjames-ops/Mamba-Lightskin,,https://github.com/codebyjames-ops/Mamba-Lightskin,0,0,HTML,,2026-10-04T19:22:31Z,2026-10-05,False,Long Context
+1404754941,codebyjames-ops/Mambaaa-Lightskin,,https://github.com/codebyjames-ops/Mambaaa-Lightskin,0,0,HTML,,2026-10-04T19:09:46Z,2026-10-05,False,Long Context
+1404360619,MamBa135313-hash/mamba-planner,,https://github.com/MamBa135313-hash/mamba-planner,0,0,HTML,,2026-10-04T12:17:37Z,2026-10-05,False,Long Context
+1404513039,huhufrfr186-spec/DDS-Mamba.,,https://github.com/huhufrfr186-spec/DDS-Mamba.,0,0,Python,,2026-10-04T14:33:09Z,2026-10-05,False,Long Context
+1404771904,KaiXu-HIT/v3.2-M3SR-MambaIRv2-E4,,https://github.com/KaiXu-HIT/v3.2-M3SR-MambaIRv2-E4,0,0,Python,,2026-10-04T19:32:20Z,2026-10-05,False,Long Context
+1404068121,SafaBAtitallah/awesome-graph-mamba,Interactive Graph Mamba Survey and Taxonomy,https://github.com/SafaBAtitallah/awesome-graph-mamba,0,0,TeX,,2026-10-04T07:23:25Z,2026-10-05,False,Long Context
+1404772104,KaiXu-HIT/v3.2-M3SR-MambaIRv2-E5,,https://github.com/KaiXu-HIT/v3.2-M3SR-MambaIRv2-E5,0,0,Python,,2026-10-04T19:32:38Z,2026-10-05,False,Long Context
+1404774851,KaiXu-HIT/v3.2-M3SR-MambaIRv2-E8,,https://github.com/KaiXu-HIT/v3.2-M3SR-MambaIRv2-E8,0,0,,,2026-10-04T19:36:25Z,2026-10-05,False,Long Context
+1404775122,KaiXu-HIT/v3.2-M3SR-MambaIRv2-E9,,https://github.com/KaiXu-HIT/v3.2-M3SR-MambaIRv2-E9,0,0,,,2026-10-04T19:36:46Z,2026-10-05,False,Long Context
+1404773375,KaiXu-HIT/v3.2-M3SR-MambaIRv2-E7,,https://github.com/KaiXu-HIT/v3.2-M3SR-MambaIRv2-E7,0,0,Python,,2026-10-04T19:34:19Z,2026-10-05,False,Long Context
+1404769972,KaiXu-HIT/v3.2-M3SR-MambaIRv2-E3,,https://github.com/KaiXu-HIT/v3.2-M3SR-MambaIRv2-E3,0,0,Python,,2026-10-04T19:29:46Z,2026-10-05,False,Long Context
+1404760240,KaiXu-HIT/v3.2-M3SR-MambaIRv2-E2,,https://github.com/KaiXu-HIT/v3.2-M3SR-MambaIRv2-E2,0,0,Python,,2026-10-04T19:16:46Z,2026-10-05,False,Long Context
+1404772956,KaiXu-HIT/v3.2-M3SR-MambaIRv2-E6,,https://github.com/KaiXu-HIT/v3.2-M3SR-MambaIRv2-E6,0,0,Python,,2026-10-04T19:33:44Z,2026-10-05,False,Long Context
+1403930689,LaMambaKukun/LaMambaKukun,,https://github.com/LaMambaKukun/LaMambaKukun,0,0,,,2026-10-04T05:13:49Z,2026-10-05,False,Long Context
+1404533472,KhushiKeswani/mamba-training-from-scratch,,https://github.com/KhushiKeswani/mamba-training-from-scratch,0,0,Jupyter Notebook,,2026-10-04T14:52:50Z,2026-10-05,False,Long Context
+1404758835,KaiXu-HIT/v3.2-M3SR-MambaIRv2v3.2-E1,,https://github.com/KaiXu-HIT/v3.2-M3SR-MambaIRv2v3.2-E1,0,0,Python,,2026-10-04T19:14:56Z,2026-10-05,False,Long Context
+1404504985,heemi98/ai-reproduction-lab,"Reproducing classic and frontier AI papers: Transformer, Mamba, RL, and more.",https://github.com/heemi98/ai-reproduction-lab,0,0,,,2026-10-04T14:25:16Z,2026-10-05,False,Long Context
+1404417211,Tame21/vllm-ascend-skills,"Chinese skills for vLLM Ascend Mamba/GDN speculative inference and LoRA development, accuracy, debugging and performance",https://github.com/Tame21/vllm-ascend-skills,0,0,Python,,2026-10-04T13:06:26Z,2026-10-05,False,Long Context
+1404572796,abobakerkamel/Multispectral-Super-Resolution-2m-to-1m,"Physics-aware 4-band multispectral super-resolution from 2m to 1m using EHFNet-MS, Transformer/Mamba, frequency experts, Mixture-of-Experts fusion, band-specific refinement, and data-consistency training.",https://github.com/abobakerkamel/Multispectral-Super-Resolution-2m-to-1m,0,0,Jupyter Notebook,,2026-10-04T15:35:52Z,2026-10-05,False,Long Context
+1403851142,armsberti8/ssmj,content,https://github.com/armsberti8/ssmj,0,0,,,2026-10-04T03:39:32Z,2026-10-05,False,Long Context
+1404045102,h889i63gxquw/ssmnq,content,https://github.com/h889i63gxquw/ssmnq,0,0,,,2026-10-04T07:01:39Z,2026-10-05,False,Long Context
+1404338278,anklecarro/ssmb,content,https://github.com/anklecarro/ssmb,0,0,,,2026-10-04T11:56:17Z,2026-10-05,False,Long Context
+1403891197,silver-ion93/ssmoj,content,https://github.com/silver-ion93/ssmoj,0,0,,,2026-10-04T04:33:05Z,2026-10-05,False,Long Context
+1403799283,nikkeng/ssmzz,content,https://github.com/nikkeng/ssmzz,0,0,,,2026-10-04T02:20:50Z,2026-10-05,False,Long Context
+1404107904,faintvector84/ssmj,content,https://github.com/faintvector84/ssmj,0,0,,,2026-10-04T07:58:58Z,2026-10-05,False,Long Context
+1403945386,liver7ray/ssmafe,,https://github.com/liver7ray/ssmafe,0,0,,,2026-10-04T05:27:42Z,2026-10-05,False,Long Context
+1403925428,olive-zephyr60/ssmfj,content,https://github.com/olive-zephyr60/ssmfj,0,0,,,2026-10-04T05:07:27Z,2026-10-05,False,Long Context
+1404852786,nathankchow/SSMVPlayer,My custom SwiftUI video player for Starlight Stage MVs,https://github.com/nathankchow/SSMVPlayer,0,0,Swift,,2026-10-04T21:32:17Z,2026-10-05,False,Long Context
+1403979560,coopererika2/ssmlvcc,,https://github.com/coopererika2/ssmlvcc,0,0,,,2026-10-04T05:59:35Z,2026-10-05,False,Long Context
+1403801690,apxaf6f454/ssmx,content,https://github.com/apxaf6f454/ssmx,0,0,,,2026-10-04T02:23:58Z,2026-10-05,False,Long Context
+1404513263,sunkeyb/ssmx,content,https://github.com/sunkeyb/ssmx,0,0,,,2026-10-04T14:33:22Z,2026-10-05,False,Long Context
+1404729934,coilyco/ssm-app,,https://github.com/coilyco/ssm-app,0,0,Swift,,2026-10-04T18:38:01Z,2026-10-05,False,Long Context
+1404361755,Newdawn01/pias_ssm,PIAS-SSM: Physics-Informed Adaptive Spectral with State Space Model for few-shot bearing fault diagnosis under strong noise,https://github.com/Newdawn01/pias_ssm,0,0,Python,,2026-10-04T12:18:43Z,2026-10-05,False,Long Context
+1404327668,wrouesnel/ssm-proxycommand,"SSH ProxyCommand that tunnels SSH over AWS SSM Session Manager, selecting the instance and AWS profile from the hostname",https://github.com/wrouesnel/ssm-proxycommand,0,0,Go,,2026-10-04T11:47:48Z,2026-10-05,False,Long Context
+1404240562,azeez148/ssms-rag,,https://github.com/azeez148/ssms-rag,0,0,Python,,2026-10-04T10:22:19Z,2026-10-05,False,Long Context
+1403857745,kl2400032691/ssm-patch-management-fleet,,https://github.com/kl2400032691/ssm-patch-management-fleet,0,0,Shell,,2026-10-04T03:48:03Z,2026-10-05,False,Long Context
+1404944128,King2coding/AVHRR-SSMI-observation-frequency-analysis,Code archive for AVHRR and SSMI observation-frequency and sampling analysis,https://github.com/King2coding/AVHRR-SSMI-observation-frequency-analysis,0,0,Python,"avhrr,high-latitudes,python,remote-sensing,satellite-sampling,ssmi",2026-10-05T00:27:53Z,2026-10-05,False,Long Context
+1404767178,samanklesaria/longhorn_sensors,Experiments with SSMs for time-to-fault detection,https://github.com/samanklesaria/longhorn_sensors,0,0,Python,,2026-10-04T19:25:55Z,2026-10-05,False,Long Context
+1404963140,danfragoso/openssm,"Read-only Subaru Select Monitor (SSM) reader in Zig, over a Tactrix OpenPort 2.0",https://github.com/danfragoso/openssm,0,0,Zig,,2026-10-05T01:04:47Z,2026-10-05,False,Long Context
+1404904504,hassan-mahmoud-analyst/DataCo-SupplyChain-Analysis,End-to-end SQL analysis on 180k+ supply chain records using SQL Server Express & SSMS.,https://github.com/hassan-mahmoud-analyst/DataCo-SupplyChain-Analysis,0,0,TSQL,,2026-10-04T23:06:25Z,2026-10-05,False,Long Context
+1403819434,ike-barnes/aws-3tier-terraform,"Highly available 3-tier AWS architecture with Terraform modules: multi-AZ VPC, ALB, Auto Scaling, RDS, SSM access",https://github.com/ike-barnes/aws-3tier-terraform,0,0,HCL,,2026-10-04T02:53:18Z,2026-10-05,False,Long Context
+1403872096,ngocp-0847/localaws,"A small AWS emulator that runs things for real: S3, EventBridge, Step Functions, ECS, CloudWatch Logs, SSM in one Go binary",https://github.com/ngocp-0847/localaws,0,0,Go,,2026-10-04T04:07:38Z,2026-10-05,False,Long Context
+1404840426,ptch05/LPL-Parser-Compiler,"Java coursework project that parses LPL-C source into an AST and compiles it to SSM stack-machine assembly, with JUnit tests over a large parser/compiler test suite.",https://github.com/ptch05/LPL-Parser-Compiler,0,0,Java,,2026-10-04T21:11:46Z,2026-10-05,False,Long Context
+1404208049,AMNI-NT/deep-learning-dynamics,"Experiments with linear and wide neural networks, convolutional models, transformer regression, and linear state-space models.",https://github.com/AMNI-NT/deep-learning-dynamics,0,0,Python,,2026-10-04T09:40:25Z,2026-10-05,False,Long Context
